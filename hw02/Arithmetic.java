@@ -9,6 +9,7 @@
 //     java Arithmetic
 
 //  define a class
+
 public class Arithmetic{
     
 //  add main method
@@ -26,20 +27,30 @@ public class Arithmetic{
       double taxPercent=0.06;//taxes rate
 
 //  Expected output
-      double totalsockcost, totalglasscost, totalenvelopecost, totaltaxes, totalcostbeforetax, totalactuallypaid;
+      double totalsockcost, totalsocktax, totalglasscost, totalglasstax, totalenvelopecost, totalenvelopetax, totaltaxes, totalcostbeforetax, totalactuallypaid;
 //  print out the output data.
     totalsockcost=nSocks*sockCost$;//the total cost of socks
-    System.out.println("Total cost of socks is " +totalsockcost+" dollars");
     totalglasscost=nGlasses*glassCost$;// the total cost of glasses
-    System.out.println("Total cost of glasses is "+totalglasscost+" dollars");
     totalenvelopecost=nEnvelopes*envelopeCost$;//the total cost of envelopes
-    System.out.println("Total cost of envelopes is "+totalenvelopecost+" dollars");
+    totalsocktax=totalsockcost*taxPercent;//the tax of socks
+    totalglasstax=totalglasscost*taxPercent;//the tax of glasses
+    totalenvelopetax=totalenvelopecost*taxPercent;//the tax of envelopes
+
+    
+    
+    System.out.println("I bought socks, glasses and envelopes in Walmart. ");
+    System.out.println("It includes 3 paris of socks, 6 drinking glasses, and 1 box of envelope.");
+    System.out.println("The total cost of socks is " +totalsockcost+" dollars, and the tax of socks is " +totalsocktax+" dollars.");
+    System.out.println("The total cost of glasses is "+totalglasscost+" dollars, and the tax of glasses is " +totalglasstax+" dollars.");
+    System.out.println("The total cost of envelopes is "+totalenvelopecost+" dollars, and the tax of envelopes is " +totalenvelopetax+" dollars.");
     totaltaxes=(totalsockcost+totalglasscost+totalenvelopecost)*taxPercent;//the cost of total taxes
-    System.out.println("Total cost of taxes is "+totaltaxes+" dollars");
+    System.out.printf("Total cost of taxes is %.2f dollars",totaltaxes);
     totalcostbeforetax=totalsockcost+totalglasscost+totalenvelopecost;// the total cost of three things
     System.out.println("Total cost before taxing is "+totalcostbeforetax+ "dollars");
     totalactuallypaid=totalcostbeforetax+totaltaxes;//total cost
-    System.out.println("Total cost is "+totalactuallypaid+ "dollars");
+    System.out.printf("Total cost is %.2f\n dollars",totalactuallypaid);
+    
+    
  
   }
 }

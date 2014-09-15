@@ -25,11 +25,11 @@ public class Bicycle{
 // Above gives distance in inches
 //(for each count, a rotation of the wheel travels
 //the diameter in inches times PI)
-      distanceTripMile=distanceTrip/inchesPerFoot/feetPerMile; // Converts to distance in miles
+      distanceTripMile=distanceTrip/inchesPerFoot/feetPerMile;// Converts to distance in miles
       double avgspd=distanceTripMile/secsTrip*secondsPerMinute*minutesPerHour;//average speed of bicycle in unit of miles per hour
-      System.out.println("The distance was "+distanceTripMile+" miles and took" +secsTrip/secondsPerMinute+ "minutes." );
-      System.out.println("The average mph was "+avgspd+" miles");
-
+      System.out.printf("The distance was %.2f miles and took %.1f minutes.\n ", distanceTripMile, secsTrip/secondsPerMinute);
+      System.out.printf("The average mph was %.2f\n ", avgspd);
+      
         
          
     }//end of main method

@@ -16,7 +16,7 @@ public class Bicycle{
           "Enter the number of counts: ");
       int countsTrip=myScanner.nextInt(); //number of counts
       double wheelDiameter=27.0,
-      PI=3.14159, //
+      PI=3.14159, 
       feetPerMile=5280, 
       inchesPerFoot=12, 
       secondsPerMinute=60,

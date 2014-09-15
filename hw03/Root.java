@@ -1,6 +1,7 @@
 ////////////////////////////////
 //Zihao Wang
 //9/15/2014
+//A crude estimate of the cube root of the number 
      import java.util.Scanner;
      
 public class Root{

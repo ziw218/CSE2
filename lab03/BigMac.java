@@ -2,7 +2,7 @@
 //Zihao Wang
 //9/10/2014
 //compute the cost fo buying a BigMacs.
-      import java.util.Scanner;
+    
 
 public class BigMac {
              //main method required for every java program

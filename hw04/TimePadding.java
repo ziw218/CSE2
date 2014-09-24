@@ -22,7 +22,7 @@ public class TimePadding{
         
         if (my.hasNextInt()) {
             int sec=my.nextInt();
-            int h1, h2, sec1, sec2;
+            int h1, h2, sec1, min,hr;
             if (sec<=86400&&sec>=0){
             if (sec<3600) {    
                 sec1=sec%60;//calculate the seconds
@@ -49,9 +49,7 @@ public class TimePadding{
                 if (hr<10&&min>=10&&sec1>=10) {
                     System.out.println("The time is 0"+hr+":"+min+":"+sec1);
                 }//hr<10,min and sec >=10
-                else if (hr<10&&min<10&&sec1>=10) {
-                    System.out.println("The time is 0"+hr+":0"+min+":"+sec1);
-                }//all things <10
+                
                 else if (hr<10&&min<10&&sec1<10) {
                     System.out.println("The time is 0"+hr+":0"+min+":0"+sec1);
                 }// hour<10, MIN>=10, SEC<10
@@ -67,6 +65,9 @@ public class TimePadding{
                 else if (hr>=10&&sec1<10&&min<10) {
                     System.out.println("The time is "+hr+":0"+min+":0"+sec1);
                 }//hour>=0, MIN<10, SEC<10
+                else if (hr<10&&min<10&&sec1>=10) {
+                    System.out.println("The time is 0"+hr+":0"+min+":"+sec1);
+                }//all things <10
                 else {
                     System.out.println("The time is "+hr+":"+min+":"+sec1);
                 }//no zero
